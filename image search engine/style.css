@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: jaro;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: Reddit Mono;
+    font-size: 100px;
+    margin: 100px auto 50px;
+    font-weight: 600;
+    margin-left: 530px;
+    margin-top: -680px;
+    
+}
+
+body{
+    background: rgb(0, 0, 0);
+    color: rgb(193, 188, 188);
+}
+
+form{
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    height: 80px;
+    background: rgb(108, 106, 106);
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+}
+
+form input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: rgb(16, 13, 13);
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+form button{
+    padding: 0 40px;
+    height: 100%;
+    border-radius: 100px;
+    background: rgb(31, 30, 30);
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    color: rgb(255, 255, 255);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+
+}
+
+::placeholder{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+#showBtn{
+    background: rgb(107, 26, 26);
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+
+}
+#searchResult{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+#searchResult img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.vid{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.43),rgb(51, 50, 50)); 
+    padding: 0 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.videow{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: transparent;
+    position: fixed;
+}
+
+@media (max-aspect-ratio: 16/9){
+    .vid{
+        width: auto;
+        height: 100%;
+    }
+}
